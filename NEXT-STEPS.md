@@ -1,53 +1,56 @@
 # Next steps — pick up here
 
-_Last updated: 2026-11-11 (end of setup day)_
+_Last updated: 2026-11-12_
 
 ## Done ✅
 
 - MySQL Server 8.4.9 installed, service `MySQL84` running on `127.0.0.1:3306`
 - MySQL Workbench 26.10, Power BI Desktop, Git 2.56 installed
-- Python (Anaconda at `E:\datascience`) can query MySQL via `mysql-connector-python`
+- Python (Anaconda at `E:\datascience`) queries MySQL via `mysql-connector-python`
 - Practice database `practice` seeded:
   customers 800 · products 120 · orders 6000 · order_items 11300 · employees 54
-- This repo initialised, 2 commits on `main`
 - 15 SQL exercises + solutions verified working
 - Starter notebook verified running end-to-end
+- Git email set to `maaz.tech07@gmail.com`
+- GitHub account created: **maaz-dev07**
+- Repo pushed: https://github.com/maaz-dev07/data-journey (public, `main`)
+- LinkedIn account created: student, Patliputra University, BSc Zoology
 
-Root password: see `mysql-root-password.txt` on the Desktop.
+Root password: see `mysql-root-password.txt` on the Desktop (never commit it).
 
-## Pending — do these first ⬜
+## Now: start learning ⬜
 
-1. **Set your real Git email** (currently the placeholder `maaz@example.com`):
-   ```powershell
-   git config --global user.email "you@example.com"
-   ```
+**This week — SQL exercises 1–7**
 
-2. **Create a GitHub account** at github.com (verify the email).
+1. Open MySQL Workbench → connect `127.0.0.1:3306` as `root`
+2. Query tab: `USE practice;`
+3. Work through `sql/01_exercises.sql`, exercises 1–7
+4. Check yourself against `sql/02_solutions.sql` only after trying
 
-3. **Create the repo and push** — on github.com: New repository → `data-journey`
-   → Public → no README. Then in a NEW terminal:
-   ```powershell
-   cd C:\Users\MAAZ\Documents\data-journey
-   git remote add origin https://github.com/YOUR-USERNAME/data-journey.git
-   git push -u origin main
-   ```
-   A browser window will open for sign-in — that is Git Credential Manager, approve it.
+**Then the notebook**
 
-4. **Create a LinkedIn account** — photo, headline
-   `Aspiring Data Analyst | SQL, Python`, education, follow 10 data people.
-   Checklist is in `ROADMAP.md`.
+Open `notebooks/01_connect_and_explore.ipynb` in VS Code or run `jupyter lab`
+from this folder. Change one query and explain what happened.
 
-## First learning task
+## Daily loop
 
-Open MySQL Workbench → connect `127.0.0.1:3306` as `root` → `USE practice;`
-then work through `sql/01_exercises.sql`, exercises **1–7**.
-
-Commit daily:
 ```powershell
+cd C:\Users\MAAZ\Documents\data-journey
 git add .
 git commit -m "what you did today"
 git push
 ```
+
+One commit a day beats one big commit a week. This is your public proof of work.
+
+## LinkedIn follow-ups (do this week)
+
+- [ ] Add a photo
+- [ ] Headline: `Aspiring Data Analyst | SQL, Python, Excel | BSc Zoology @ Patliputra University`
+- [ ] Add education
+- [ ] Add skills as you learn them (SQL now, Python when comfortable, Power BI after first dashboard)
+- [ ] Follow 10 data people/companies
+- [ ] Leave "Open to work" OFF until you have 1–2 projects
 
 ## Note
 
